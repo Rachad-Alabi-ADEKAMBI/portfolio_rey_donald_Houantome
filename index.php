@@ -1,292 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rey Donald Houantome - Designer Graphique</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-   
-  
-
+    <title>Rey-Donald HOUANTOME - Portfolio Design Graphique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading" id="loading">
-        <div class="loader"></div>
-    </div>
 
+<body>
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <svg class="nav-icon" viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-                PORTFOLIO
-            </a>
-            <ul class="nav-links">
-                <li>
-                    <a href="#home">
-                        <svg class="nav-icon" viewBox="0 0 24 24">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9,22 9,12 15,12 15,22"/>
-                        </svg>
-                        Accueil
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        <svg class="nav-icon" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                            <circle cx="12" cy="7" r="4"/>
-                        </svg>
-                        À propos
-                    </a>
-                </li>
-                <li>
-                    <a href="#portfolio">
-                        <svg class="nav-icon" viewBox="0 0 24 24">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#testimonials">
-                        <svg class="nav-icon" viewBox="0 0 24 24">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                        </svg>
-                        Témoignages
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <svg class="nav-icon" viewBox="0 0 24 24">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        Contact
-                    </a>
-                </li>
-            </ul>
-            <button class="theme-toggle" id="theme-toggle">
-                <svg class="theme-icon" id="theme-icon" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="5"/>
-                    <line x1="12" y1="1" x2="12" y2="3"/>
-                    <line x1="12" y1="21" x2="12" y2="23"/>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                    <line x1="1" y1="12" x2="3" y2="12"/>
-                    <line x1="21" y1="12" x2="23" y2="12"/>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                </svg>
-            </button>
-            <button class="mobile-menu-btn" id="mobile-menu-btn">
-                <div class="hamburger" id="hamburger">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">RDH Design</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-            </button>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#diplomes">Diplômes</a></li>
+                    <li><a href="#contact" class="btn-contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <ul>
-            <li>
-                <a href="#home">
-                    <svg class="nav-icon" viewBox="0 0 24 24">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                        <polyline points="9,22 9,12 15,12 15,22"/>
-                    </svg>
-                    Accueil
-                </a>
-            </li>
-            <li>
-                <a href="#about">
-                    <svg class="nav-icon" viewBox="0 0 24 24">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                        <circle cx="12" cy="7" r="4"/>
-                    </svg>
-                    À propos
-                </a>
-            </li>
-            <li>
-                <a href="#portfolio">
-                    <svg class="nav-icon" viewBox="0 0 24 24">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="8" y1="21" x2="16" y2="21"/>
-                        <line x1="12" y1="17" x2="12" y2="21"/>
-                    </svg>
-                    Portfolio
-                </a>
-            </li>
-            <li>
-                <a href="#testimonials">
-                    <svg class="nav-icon" viewBox="0 0 24 24">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                    Témoignages
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    <svg class="nav-icon" viewBox="0 0 24 24">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                    Contact
-                </a>
-            </li>
-        </ul>
-    </div>
-
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-        
-        <div class="hero-shapes">
-            <div class="shape"></div>
-            <div class="shape"></div>
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
-
-        <div class="floating-elements">
-            <div class="floating-element">✨</div>
-            <div class="floating-element">🎨</div>
-            <div class="floating-element">💡</div>
-        </div>
-
-        <div class="hero-content">
-            <div class="hero-subtitle">Bonjour, je suis Rey Donald HOUANTOME</div>
-            <h1>Designer Créatif</h1>
-            <div class="typing-text" id="typing-text"></div>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="cta-button">
-                    <svg class="btn-icon" viewBox="0 0 24 24">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="8" y1="21" x2="16" y2="21"/>
-                        <line x1="12" y1="17" x2="12" y2="21"/>
-                    </svg>
-                    Découvrir mon travail
-                </a>
-                <a href="#contact" class="cta-secondary">
-                    <svg class="btn-icon" viewBox="0 0 24 24">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                    Me contacter
-                </a>
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Salut !!!</span>
+                        <span class="welcome">et Bienvenue!</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Expert en <strong>Design Thinking</strong>, <strong>Branding</strong> et dans la <strong>Communication Visuelle</strong>
+                    </p>
+                    <p class="hero-description">
+                        Je m'appel <strong>Rey-Donald HOUANTOME</strong> quotidiennement surnommé le <em>"Sur-Empathiques"</em> à cause de mon excès de souciance vis à vis des Futurs Utilisateurs de Chacune de mes Conceptions Graphiques.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-13%20at%2022.54.05-T5gyC4XuzDHGwONmggdlfE6rqqiOs9.jpeg" alt="Rey-Donald HOUANTOME">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title fade-in">À propos de moi</h2>
-            <div class="about-content">
-                <div class="profile-section slide-in-left">
-                    <div class="profile-image">
-                        <img src="images/rey_removed.png" alt="">
-                    </div>
-                    <div class="profile-info">
-                        <h3>Rey Donald HOUANTOME</h3>
-                        <p>Designer Graphique Senior</p>
-                    </div>
-                </div>
-                <div class="about-text slide-in-right">
-                    <h3>Passionné par le design depuis plus de 5 ans</h3>
-                    <p>Je suis un designer graphique spécialisé dans la création d'identités visuelles fortes et d'expériences utilisateur exceptionnelles. Mon approche combine créativité artistique, stratégie marketing et innovation technologique pour donner vie à vos projets les plus ambitieux.</p>
-                    <p>Diplômé en design graphique et fort d'une expérience variée avec des startups innovantes et des entreprises établies, je transforme vos idées en créations visuelles impactantes qui marquent les esprits et génèrent des résultats.</p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">Mes Services</h2>
+                <p class="section-description">Des solutions créatives complètes pour votre identité visuelle</p>
             </div>
-            
-            <div class="stats-grid slide-in-right">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="100">0</div>
-                    <div class="stat-label">Projets réalisés</div>
+
+            <div class="services-grid">
+                <!-- Branding -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Branding & Identité Visuelle</h3>
+                    </div>
+                    <ul class="service-list">
+                        <li>Création de logos professionnels</li>
+                        <li>Charte graphique complète</li>
+                        <li>Rebranding et refonte d'identité</li>
+                        <li>Cartes de visite et papeterie</li>
+                        <li>Guide d'utilisation de marque</li>
+                    </ul>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="80">0</div>
-                    <div class="stat-label">Clients satisfaits</div>
+
+                <!-- Communication Digitale -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Communication Digitale</h3>
+                    </div>
+                    <ul class="service-list">
+                        <li>Visuels pour réseaux sociaux (Instagram, Facebook, LinkedIn)</li>
+                        <li>Templates de stories et posts</li>
+                        <li>Bannières publicitaires (Google Ads, Facebook Ads)</li>
+                        <li>Infographies et contenus visuels</li>
+                        <li>Newsletters et emailings</li>
+                    </ul>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="5">0</div>
-                    <div class="stat-label">Années d'expérience</div>
+
+                <!-- Supports Imprimés -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Supports Imprimés</h3>
+                    </div>
+                    <ul class="service-list">
+                        <li>Flyers et dépliants publicitaires</li>
+                        <li>Brochures et catalogues</li>
+                        <li>Affiches et posters événementiels</li>
+                        <li>Packaging et étiquettes produits</li>
+                        <li>Menus pour restaurants</li>
+                        <li>Cartes de vœux et invitations</li>
+                    </ul>
                 </div>
-            </div>
-            
-            <div class="skills-container fade-in">
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Design Graphique</span>
-                        <span class="skill-percentage">95%</span>
+
+                <!-- Autres Services -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="16" x2="12" y2="12" />
+                                <line x1="12" y1="8" x2="12.01" y2="8" />
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Autres Services</h3>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="95"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">UI/UX Design</span>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Branding</span>
-                        <span class="skill-percentage">92%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="92"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Motion Design</span>
-                        <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Web Design</span>
-                        <span class="skill-percentage">88%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="88"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Print Design</span>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
-                    </div>
+                    <ul class="service-list">
+                        <li>Retouche et montage photo professionnel</li>
+                        <li>Vectorisation de logos et illustrations</li>
+                        <li>Création de présentations PowerPoint/Keynote</li>
+                        <li>Mockups et mises en situation 3D</li>
+                        <li>Animations graphiques simples (GIF, vidéos courtes)</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -295,272 +164,130 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title fade-in">Mon Portfolio</h2>
-            
-            <div class="portfolio-filters fade-in">
-                <button class="filter-btn active" data-filter="all"><span>Tous</span></button>
-                <button class="filter-btn" data-filter="branding"><span>Branding</span></button>
-                <button class="filter-btn" data-filter="web"><span>Web Design</span></button>
-                <button class="filter-btn" data-filter="mobile"><span>Mobile</span></button>
-                <button class="filter-btn" data-filter="print"><span>Print</span></button>
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-description">Une sélection de mes réalisations récentes</p>
             </div>
 
-            <div class="portfolio-grid fade-in">
-                <div class="portfolio-item" data-category="branding">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="images/image1.jpeg" alt="">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-14%20at%2015.19.11-p2BQYBrNH4WKp91IsM6UM8sXJeQAkR.jpeg" alt="Food Palace - Branding Restaurant">
                     </div>
-                    <div class="portfolio-overlay">
-                        <div class="overlay-content">
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                    <circle cx="12" cy="12" r="3"/>
-                                </svg>
-                                Voir le projet
-                            </button>
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15,3 21,3 21,9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                                Lien externe
-                            </button>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Branding</div>
-                        <h3>Identité Visuelle TechFlow</h3>
-                        <p>Création complète d'une identité visuelle moderne pour une startup technologique, incluant logo, charte graphique et déclinaisons.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Logo</span>
-                            <span class="tag">Charte</span>
-                            <span class="tag">Print</span>
-                        </div>
+                    <div class="portfolio-info">
+                        <h3>Food Palace</h3>
+                        <p>Identité visuelle & Communication</p>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="web">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="images/image2.jpeg" alt="">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-12%20at%2016.28.55-WUGMzvkTUATp8pj5Twr8EIFjETCc4O.jpeg" alt="Pretty's Perles et Accessoires">
                     </div>
-                    <div class="portfolio-overlay">
-                        <div class="overlay-content">
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                    <circle cx="12" cy="12" r="3"/>
-                                </svg>
-                                Voir le projet
-                            </button>
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15,3 21,3 21,9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                                Lien externe
-                            </button>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Web Design</div>
-                        <h3>E-commerce Luxe</h3>
-                        <p>Refonte complète d'un site e-commerce haut de gamme avec focus sur l'expérience utilisateur et la conversion.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Responsive</span>
-                        </div>
+                    <div class="portfolio-info">
+                        <h3>Pretty's Perles</h3>
+                        <p>Branding & Design d'intérieur</p>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                          <img src="images/image3.jpeg" alt="">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-12%20at%2016.16.59-bQnZvMf1vTOTO8evwQ4W0IcD5fFmaW.jpeg" alt="Tropi Zest - Cartes de visite">
                     </div>
-                    <div class="portfolio-overlay">
-                        <div class="overlay-content">
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                    <circle cx="12" cy="12" r="3"/>
-                                </svg>
-                                Voir le projet
-                            </button>
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15,3 21,3 21,9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                                Lien externe
-                            </button>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Mobile App</div>
-                        <h3>App Fitness Revolution</h3>
-                        <p>Design d'interface pour une application mobile de fitness avec gamification et suivi personnalisé.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Mobile</span>
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">Prototype</span>
-                        </div>
+                    <div class="portfolio-info">
+                        <h3>Tropi Zest</h3>
+                        <p>Cartes de visite & Identité</p>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="branding">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                          <img src="images/image4.jpeg" alt="">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-14%20at%2011.44.11-qMrT95vS3Imm4uBzQRCX7OFNtMZn5w.jpeg" alt="Tropi Zest - Merchandising">
                     </div>
-                    <div class="portfolio-overlay">
-                        <div class="overlay-content">
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                    <circle cx="12" cy="12" r="3"/>
-                                </svg>
-                                Voir le projet
-                            </button>
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15,3 21,3 21,9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                                Lien externe
-                            </button>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Branding</div>
-                        <h3>Rebranding Corporate</h3>
-                        <p>Refonte complète de l'identité d'une entreprise B2B avec nouvelle stratégie de marque et supports de communication.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Rebranding</span>
-                            <span class="tag">Corporate</span>
-                            <span class="tag">Strategy</span>
-                        </div>
+                    <div class="portfolio-info">
+                        <h3>Tropi Zest</h3>
+                        <p>Merchandising & Packaging</p>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="web">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                          <img src="images/image1.jpeg" alt="">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-14%20at%2011.44.15-u6aLLUGi3F23tuZtCrKtmGZwbdKpyl.jpeg" alt="Les Exquis d'Anie">
                     </div>
-                    <div class="portfolio-overlay">
-                        <div class="overlay-content">
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                    <circle cx="12" cy="12" r="3"/>
-                                </svg>
-                                Voir le projet
-                            </button>
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15,3 21,3 21,9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                                Lien externe
-                            </button>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Web Design</div>
-                        <h3>Dashboard Analytics</h3>
-                        <p>Interface de tableau de bord pour plateforme SaaS avec visualisation de données complexes et navigation intuitive.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Dashboard</span>
-                            <span class="tag">SaaS</span>
-                            <span class="tag">Data Viz</span>
-                        </div>
+                    <div class="portfolio-info">
+                        <h3>Les Exquis d'Anie</h3>
+                        <p>Logo & Merchandising</p>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="print">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                          <img src="images/image2.jpeg" alt="">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-12%20at%2016.56.58-RQet1Hp4NJF6EsfLcPqg1aywBXyAjp.jpeg" alt="Sacre Party - Night Show">
                     </div>
-                    <div class="portfolio-overlay">
-                        <div class="overlay-content">
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                    <circle cx="12" cy="12" r="3"/>
-                                </svg>
-                                Voir le projet
-                            </button>
-                            <button class="overlay-btn">
-                                <svg class="btn-icon" viewBox="0 0 24 24">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15,3 21,3 21,9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                                Lien externe
-                            </button>
-                        </div>
+                    <div class="portfolio-info">
+                        <h3>Sacre Party</h3>
+                        <p>Affiche événementielle</p>
                     </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Print Design</div>
-                        <h3>Catalogue Premium</h3>
-                        <p>Design et mise en page d'un catalogue produit haut de gamme avec photographies et typographie soignées.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Catalogue</span>
-                            <span class="tag">Print</span>
-                            <span class="tag">Layout</span>
-                        </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-12%20at%2016.28.55%20%281%29-XmLRjB65PE1SRiGPK05yzhYHHyxU0Y.jpeg" alt="Pretty's - Bijoux">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Pretty's Jewelry</h3>
+                        <p>Photographie produit & Branding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-14%20at%2014.09.09-kgA8NtNWJSN9y05jThihQyx0uIKgZw.jpeg" alt="Carte de présentation">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Carte Personnelle</h3>
+                        <p>Design & Communication</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <!-- Diplômes Section -->
+    <section id="diplomes" class="diplomes">
         <div class="container">
-            <h2 class="section-title fade-in">Ce que disent mes clients</h2>
-            <div class="testimonials-grid fade-in">
-                <div class="testimonial-item">
-                    <div class="testimonial-text">
-                        "Un travail exceptionnel ! Le design créé a dépassé toutes nos attentes et a vraiment contribué au succès de notre lancement produit. Professionnel, créatif et à l'écoute."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">👨‍💼</div>
-                        <div class="author-info">
-                            <h4>Marc Dubois</h4>
-                            <p>CEO, TechStart</p>
-                        </div>
-                    </div>
+            <div class="section-header">
+                <h2 class="section-title">Diplômes & Certifications</h2>
+                <p class="section-description">Mon parcours académique et professionnel</p>
+            </div>
+
+            <div class="diplomes-grid">
+                <div class="diplome-card">
+                    <div class="diplome-year">2023</div>
+                    <h3 class="diplome-title">Master en Design Graphique</h3>
+                    <p class="diplome-school">École Supérieure d'Arts Appliqués</p>
+                    <p class="diplome-description">Spécialisation en identité visuelle et branding</p>
                 </div>
 
-                <div class="testimonial-item">
-                    <div class="testimonial-text">
-                        "Une collaboration fantastique ! Le rebranding de notre entreprise a été un succès total. L'approche stratégique et la créativité ont fait toute la différence."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">👩‍💼</div>
-                        <div class="author-info">
-                            <h4>Sophie Martin</h4>
-                            <p>Directrice Marketing, InnovateCorp</p>
-                        </div>
-                    </div>
+                <div class="diplome-card">
+                    <div class="diplome-year">2021</div>
+                    <h3 class="diplome-title">Licence en Communication Visuelle</h3>
+                    <p class="diplome-school">Institut des Beaux-Arts</p>
+                    <p class="diplome-description">Formation complète en design et communication</p>
                 </div>
 
-                <div class="testimonial-item">
-                    <div class="testimonial-text">
-                        "Design moderne, livraison dans les temps et communication parfaite. Je recommande vivement pour tous vos projets de design graphique et web."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">👨‍🎨</div>
-                        <div class="author-info">
-                            <h4>Thomas Leroy</h4>
-                            <p>Fondateur, CreativeAgency</p>
-                        </div>
-                    </div>
+                <div class="diplome-card">
+                    <div class="diplome-year">2022</div>
+                    <h3 class="diplome-title">Certification Adobe Creative Suite</h3>
+                    <p class="diplome-school">Adobe Certified Professional</p>
+                    <p class="diplome-description">Photoshop, Illustrator, InDesign</p>
+                </div>
+
+                <div class="diplome-card">
+                    <div class="diplome-year">2023</div>
+                    <h3 class="diplome-title">Formation Design Thinking</h3>
+                    <p class="diplome-school">Innovation Academy</p>
+                    <p class="diplome-description">Méthodologie centrée utilisateur</p>
                 </div>
             </div>
         </div>
@@ -569,400 +296,127 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title fade-in">Travaillons ensemble</h2>
-            <div class="contact-content fade-in">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-moi</h2>
+                <p class="section-description">Discutons de votre projet</p>
+            </div>
+
+            <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">📧</div>
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
                         <div>
                             <h4>Email</h4>
-                            <p>contact@designer-portfolio.com</p>
+                            <p>contact@rdh-design.com</p>
                         </div>
                     </div>
+
                     <div class="contact-item">
-                        <div class="contact-icon">📱</div>
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
                         <div>
                             <h4>Téléphone</h4>
-                            <p>+33 1 23 45 67 89</p>
+                            <p>+229 62 94 93 12</p>
                         </div>
                     </div>
+
                     <div class="contact-item">
-                        <div class="contact-icon">📍</div>
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
                         <div>
                             <h4>Localisation</h4>
-                            <p>Paris, France</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">⏰</div>
-                        <div>
-                            <h4>Disponibilité</h4>
-                            <p>Lun - Ven, 9h - 18h</p>
+                            <p>Cotonou, Bénin</p>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
+
+                <form class="contact-form" action="send-message.php" method="POST">
                     <div class="form-group">
                         <label for="name">Nom complet</label>
-                        <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+                        <input type="text" id="name" name="name" required>
                     </div>
+
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        <input type="email" id="email" name="email" required>
                     </div>
+
                     <div class="form-group">
                         <label for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
+
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Décrivez votre projet en détail..." required></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">
-                        <svg class="btn-icon" viewBox="0 0 24 24">
-                            <line x1="22" y1="2" x2="11" y2="13"/>
-                            <polygon points="22,2 15,22 11,13 2,9 22,2"/>
-                        </svg>
-                        Envoyer le message
-                    </button>
+
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="social-links">
-                <a href="#" class="social-link">
-                    <span>📘</span>
-                </a>
-                <a href="#" class="social-link">
-                    <span>📷</span>
-                </a>
-                <a href="#" class="social-link">
-                    <span>🐦</span>
-                </a>
-                <a href="#" class="social-link">
-                    <span>💼</span>
-                </a>
-                <a href="#" class="social-link">
-                    <span>🎨</span>
-                </a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RDH Design</h3>
+                    <p>Expert en Design Thinking, Branding et Communication Visuelle</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#diplomes">Diplômes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Réseaux Sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <p>&copy; 2024 Portfolio Designer. Tous droits réservés. Créé avec passion ❤️</p>
+
+            <div class="footer-bottom">
+                <p>&copy; <?php echo date('Y'); ?> Rey-Donald HOUANTOME. Tous droits réservés.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Loading Screen
-        window.addEventListener('load', function() {
-            const loading = document.getElementById('loading');
-            setTimeout(() => {
-                loading.classList.add('hidden');
-            }, 1000);
-        });
-
-        // Theme Toggle Functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeIcon = document.getElementById('theme-icon');
-        const body = document.body;
-
-        // Check for saved theme preference or default to 'dark'
-        const currentTheme = localStorage.getItem('theme') || 'dark';
-        body.setAttribute('data-theme', currentTheme);
-
-        // Update icon based on current theme
-        function updateThemeIcon(theme) {
-            if (theme === 'light') {
-                themeIcon.innerHTML = `
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                `;
-            } else {
-                themeIcon.innerHTML = `
-                    <circle cx="12" cy="12" r="5"/>
-                    <line x1="12" y1="1" x2="12" y2="3"/>
-                    <line x1="12" y1="21" x2="12" y2="23"/>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                    <line x1="1" y1="12" x2="3" y2="12"/>
-                    <line x1="21" y1="12" x2="23" y2="12"/>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                `;
-            }
-        }
-
-        // Initialize icon
-        updateThemeIcon(currentTheme);
-
-        // Theme toggle event listener
-        themeToggle.addEventListener('click', function() {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        // Mobile Menu Functionality
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const hamburger = document.getElementById('hamburger');
-
-        mobileMenuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                mobileMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-            }
-        });
-
-        // Typing animation
-        const typingText = document.getElementById('typing-text');
-        const texts = [
-            'Spécialisé en identité visuelle',
-            'Expert en UI/UX Design',
-            'Créateur d\'expériences uniques',
-            'Passionné par l\'innovation'
-        ];
-        let textIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-
-        function typeWriter() {
-            const currentText = texts[textIndex];
-            
-            if (isDeleting) {
-                typingText.textContent = currentText.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typingText.textContent = currentText.substring(0, charIndex + 1);
-                charIndex++;
-            }
-
-            let typeSpeed = isDeleting ? 50 : 100;
-
-            if (!isDeleting && charIndex === currentText.length) {
-                typeSpeed = 2000;
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                textIndex = (textIndex + 1) % texts.length;
-                typeSpeed = 500;
-            }
-
-            setTimeout(typeWriter, typeSpeed);
-        }
-
-        // Start typing animation after loading
-        setTimeout(typeWriter, 1500);
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'var(--nav-bg)';
-                navbar.style.backdropFilter = 'blur(20px)';
-            } else {
-                navbar.style.background = 'var(--nav-bg)';
-                navbar.style.backdropFilter = 'blur(20px)';
-            }
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    
-                    // Animate counters
-                    if (entry.target.querySelector('.stat-number')) {
-                        animateCounters(entry.target);
-                    }
-                    
-                    // Animate skill bars
-                    if (entry.target.querySelector('.skill-progress')) {
-                        animateSkillBars(entry.target);
-                    }
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements
-        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Counter animation
-        function animateCounters(container) {
-            const counters = container.querySelectorAll('.stat-number');
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = target / 100;
-                let current = 0;
-                
-                const updateCounter = () => {
-                    if (current < target) {
-                        current += increment;
-                        counter.textContent = Math.ceil(current);
-                        setTimeout(updateCounter, 20);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                
-                updateCounter();
-            });
-        }
-
-        // Skill bars animation
-        function animateSkillBars(container) {
-            const skillBars = container.querySelectorAll('.skill-progress');
-            skillBars.forEach(bar => {
-                const width = bar.getAttribute('data-width');
-                setTimeout(() => {
-                    bar.style.width = width + '%';
-                }, 200);
-            });
-        }
-
-        // Portfolio filter
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Remove active class from all buttons
-                filterBtns.forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
-                btn.classList.add('active');
-                
-                const filter = btn.getAttribute('data-filter');
-                
-                portfolioItems.forEach(item => {
-                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                        item.style.display = 'block';
-                        setTimeout(() => {
-                            item.style.opacity = '1';
-                            item.style.transform = 'translateY(0)';
-                        }, 100);
-                    } else {
-                        item.style.opacity = '0';
-                        item.style.transform = 'translateY(20px)';
-                        setTimeout(() => {
-                            item.style.display = 'none';
-                        }, 300);
-                    }
-                });
-            });
-        });
-
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simulate form submission
-            const submitBtn = this.querySelector('.submit-btn');
-            const originalText = submitBtn.innerHTML;
-            
-            submitBtn.innerHTML = `
-                <svg class="btn-icon" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="3"/>
-                </svg>
-                Envoi en cours...
-            `;
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                alert('Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.');
-                this.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
-        });
-
-        // Add some interactive effects
-        document.querySelectorAll('.portfolio-item').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-20px) rotateX(5deg) rotateY(5deg)';
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) rotateX(0) rotateY(0)';
-            });
-        });
-
-        // Parallax effect for hero shapes
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const shapes = document.querySelectorAll('.shape');
-            const particles = document.querySelectorAll('.floating-element');
-            
-            shapes.forEach((shape, index) => {
-                const speed = (index + 1) * 0.5;
-                shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
-            });
-            
-            particles.forEach((particle, index) => {
-                const speed = (index + 1) * 0.3;
-                particle.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-        });
-
-        // Add cursor trail effect
-        let mouseX = 0;
-        let mouseY = 0;
-        let trail = [];
-
-        document.addEventListener('mousemove', function(e) {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        });
-
-        // Animate elements on hover
-        document.querySelectorAll('.cta-button, .cta-secondary, .overlay-btn, .submit-btn').forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.05)';
-            });
-            
-            btn.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
